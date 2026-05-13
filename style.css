@@ -499,15 +499,45 @@ main{
     .maupassant__description__gateaux{
         width: 50%;
     }
-    .nospatisserie__subtitle{
-        display: flex;
-        
-    }
-    .nospatisserie__images{
-        width: 250px;
-    }
     .nospatisserie__boxes{
         display: flex;
+    }
+    /* début storie */
+    .storie{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    .storie__douille{
+        width: 300px;
+        height: 300px;
+
+    }
+    .storie__text{
+        width: 800px;
+    }
+    .storie::after{
+        display: none;
+    }
+    .storie__description{
+        margin: 0;
+    }
+    .storie__subtitle{
+        margin: 0;
+    }
+    .storie__guillemet{
+        margin: 0;
+    }
+
+    .separator{
+        width: 80%;
+        border-bottom: 1px solid var(--black);
+        margin: 60px auto;
     }
 
 }
