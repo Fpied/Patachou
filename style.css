@@ -91,10 +91,11 @@ main{
     height: 300px;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main__subtitle{
     display: flex;
-    margin: 80px 40px 90px  40px;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -102,6 +103,8 @@ main{
     background-color: var(--white);
     opacity: 0.8;
     line-height: 1.3;
+    width: 55%;
+    height: 40%;
 
 }
 /* Fin du titre */
@@ -226,7 +229,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 0;
-    width: 140px;
+    width: 47%;
 }
 .champs__input{
     width: 100%;
@@ -244,14 +247,16 @@ main{
     line-height: 1;
 }
 .email__input{
-    width: 290px;
+    width: 95%;
     
 }
 .placeholder{
     margin-top: 20px;
+    
 }
 .textearea__message{
     resize: none;
+    width: 95%;
 }
 .checkbox{
     margin-top: 10px;
@@ -264,7 +269,7 @@ main{
     line-height: 1;
 }
 .envoyer{
-    width: 290px;
+    width: 95%;
     padding: 10px;
     background-color: var(--gold);
     color: var(--white);
@@ -347,8 +352,164 @@ main{
 }
 .centerfooter{
     
-    padding-left: 100px;
+    padding-left: 0px;
 }
+.footer__main__info__hour{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 80px;
+}
+.footer__main__info__dayhours{
+    line-height: 1;
+    padding-left: 80px;
+}
+.footer__main__suiveznous{
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 0;
+}
+.logo{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.footer__main__logo{
+    margin-top: 20px;
+    fill: var(--white);
+    height: 20px;
+    width: 20px;
 
+}
+.footer__mention{
+    text-align: center;
+    border: 1px solid var(--gold);
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px;
+}
+@media (min-width:768px){
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+    .header__image{
+        margin-left: 1%;
+        height: 50px;
+    }
+    .nav__list{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .nav__link{
+        white-space: nowrap;
+        margin-right: 1%;
+        font-size: 0.75rem;
+    }
+    .maupassant__description__gateaux{
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid var(--black);
+        padding: 20px;
+    }
+    .nospatisserie{
+        margin-top: 50px;
+    }
+    .nospatisserie__images{
+        height: 50%;
+        width: auto;
+        margin-top: 40px;
+    }
+    .nospatisserie__description{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nospatisserie__button{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .storie__guillemet{
+        text-align: start;
+        margin: 0;
+        margin-left: 30px;
+    }
+    .storie__subtitle{
+        text-align: start;
+        margin: 0;
+        margin-left: 30px;
+    }
+    /* Footer */
+    .footer__main__info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 30px;
+        gap: 10px;
+        height: 200px;
+    }
+    .footer__main__info img{
+        margin: 5px;
+        padding: 0;
+        width: 100%;
+    }
+    .footer__nav__list, 
+    .footer__main__info__phone,
+    .footer__main__info__adresse,
+    .footer__main__info__hour,
+    .footer__main__info__dayhours,
+    .footer__main__info img{
+        padding-left: 0;
+    }
+    .footer__col{
+        margin-top: 20px;
+        padding: 1px;
+        white-space: nowrap;
+        
+    }
+    .footer__nav__link{
+        font-size: 0.8rem;
+    }
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer__main__suiveznous{
+        margin-top: 0;
+        width: 100%;
+    }
+    .footer__mention{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media(min-width: 1024px){
+    .main{
+        margin-bottom: 50px;
+    }
+    .maupassant__citation{
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.2;
+    }
+    .maupassant__description__gateaux{
+        width: 50%;
+    }
+    .nospatisserie__subtitle{
+        display: flex;
+        
+    }
+    .nospatisserie__images{
+        width: 250px;
+    }
+    .nospatisserie__boxes{
+        display: flex;
+    }
+
+}
 
 
