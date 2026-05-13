@@ -7,12 +7,12 @@
     <title>Patachou</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <img class="header__image" src="images/logo.svg" alt="logo de Patachou">
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#accueil" class="nav__link">Accueil</a>
+                    <a href="#accueil" class="nav__link active" >Accueil</a>
                 </li>
                 <li class="nav__item">
                     <a href="#Notre_savoir_faire" class="nav__link">Notre savoir-faire</a>
@@ -29,7 +29,7 @@
     <main>
         <header class="main">
             <!-- image de Background -->
-             <h1>Pâtisseries Haute Couture</h1>
+             <h1 class="main__subtitle">Pâtisseries Haute Couture</h1>
         </header>
         <section class="maupassant">
             <h2 class="maupassant__citation">
@@ -77,7 +77,7 @@
             <button class="nospatisserie__button">Découvrir toutes nos délicieuses pâtisseries</button>
         </section>
         <section class="storie">
-            <img src="images/poche-douille_histoire-patachou.png" alt="poche douille histoire patachou" class="storie__image">
+            <img class="storie__douille" src="images/poche-douille_histoire-patachou.png" alt="poche douille histoire patachou" class="storie__image">
             <img src="images/quote.svg" alt="image des guillemet" class="storie__guillemet">
             <h2 class="storie__subtitle">Patachou, toute une histoire...</h2>
             <p class="storie__description">
@@ -91,36 +91,44 @@
                 Notre histoire
             </button>
         </section>
-        <section class="form">
-            <h2 class="form__subtitle">
-                Des gâteaux pour votre événement ?
+        <section class="even">
+            <h2 class="even__subtitle">
+                Des gâteaux <br> pour votre événement ?
             </h2>
-            <p class="form__description">
+            <p class="even__description">
                 Pour vos événements exclusifs – anniversaire, séminaire d’entreprise ou réception privée – 
                 offrez à vos invités une sélection raffinée de pâtisseries, biscuits, mignardises et tartes, 
                 soigneusement élaborés pour sublimer chaque moment !
             </p>
-            <form action="#" method="post" class="form__formulaire">
-                <div class="form__formulaire__field">
-                    <label for="" class="form__formulaire__label">Votre nom et prénom</label>
-                    <input type="firstname">
-                    <label for="firstname">Prénom</label>
-                    <input type="firstname">
-                    <label for="name">nom</label>
+            <form action="#" method="post" class="form">
+                <div class="form__field">
+                    <div class="labelidentite">
+                        <label for="nom et prenom">votre nom et prénom</label>
+                    </div>
+                    <div class="indentiteinput">
+                        <div class="champ">
+                            <input class="champs__input" type="lastname" id="lastname">
+                            <label class="indentitelabel" for="lastname">Prénom</label>
+                        </div>
+                        <div class="champ">
+                            <input class="champs__input" type="name" id="name">
+                            <label class="indentitelabel" for="name">nom</label>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email" class="email__label">Votre email</label>
+                        <input type="email" class="email__input" id="email">
+                    </div>
+                    <div class="placeholder">
+                        <label class="message" for="message">Votre message</label>
+                        <textarea class="textearea__message" name="message" id="message" cols="39" rows="5"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="politique" id="politique">
+                        <label for="checkbox" class="label__checkbox">J'ai lu et j'accepte la politique de confidentialité</label>
+                    </div>
+                    <button class="envoyer" type="submit">Envoyer</button>
                 </div>
-                <div class="form__formulaire__field">
-                    <label for="email">Votre email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="form__formulaire__field">
-                    <label for="message" class="form__formulaire__label">Votre message</label>
-                    <textarea class="form__formulaire__textarea" name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form__formulaire__field">
-                    <input class="form__formulaire__checkbox" type="checkbox" name="politique" id="politique">
-                    <label for="politique">J'ai lu et j'accepte la politique de confidentialité</label>
-                </div>
-                <button class="form__formulaire__button" type="submit">Envoyer</button>
             </form>
         </section>
     </main>
@@ -131,29 +139,30 @@
         </header>
         <main class="footer__main">
             <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7633.787025386738!2d-0.5666228886844948!3d47.460765035047444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers%2C%20France!5e0!3m2!1sfr!2sca!4v1778573313057!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7633.787025386738!2d-0.5666228886844948!3d47.460765035047444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers%2C%20France!5e0!3m2!1sfr!2sca!4v1778573313057!5m2!1sfr!2sca" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             <section class="footer__main__info">
                 <img src="images/logo-white.svg" alt="logo patachou blanc" class="footer__main__info__image">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#Accueil" class="nav__link">Accueil</a>
+                <nav class="footer__nav">
+                    <ul class="footer__nav__list">
+                        <li class="footer__nav__item">
+                            <a href="#Accueil" class="footer__nav__link active">Accueil</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#notre__savoir-faire" class="nav__link">Notre savoir-faire</a>
+                        <li class="footer__nav__item">
+                            <a href="#notre__savoir-faire" class="footer__nav__link">Notre savoir-faire</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#nos_patisserie" class="nav__link">Nos pâtisseries</a>
+                        <li class="footer__nav__item">
+                            <a href="#nos_patisserie" class="footer__nav__link">Nos pâtisseries</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">contact</a>
+                        <li class="footer__nav__item">
+                            <a href="#contact" class="footer__nav__link">contact</a>
                         </li>
                     </ul>
                 </nav>
                 <p class="footer__main__info__phone">02 40 50 40 50</p>
-                <p class="footer__main__info__adresse">14 Bd Yvonne Poirel 49000 ANGERS</p>
-                <p class="footer__main__info__hour">Horaires d'ouvertures</p>
+                <p class="footer__main__info__adresse">14 Bd Yvonne Poirel <br> 49000 ANGERS</p>
+                <div class="centerfooter">
+                    <p class="footer__main__info__hour">Horaires d'ouvertures</p>
                 <p class="footer__main__info__dayhours">Mardi au vendredi: 11h-19h</p>
                 <p class="footer__main__info__dayhours">samedi: 10h30-19h</p>
                 <p class="footer__main__suiveznous">Suivez-nous</p>
@@ -166,5 +175,8 @@
             <p>Politique de confidentialité</p>
         </footer>
     </footer>
+
+    </div>
+                
 </body>
 </html>

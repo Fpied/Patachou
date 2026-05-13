@@ -1,6 +1,354 @@
+@font-face{
+    font-family: "Kaiser Decol";
+    src: url("font/Kaisei_Decol/KaiseiDecol-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Kaisei_Decol";
+    src: url("font/Kaisei_Decol/KaiseiDecol-Medium.ttf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Kaisei_Decol";
+    src: url("font/Kaisei_Decol/KaiseiDecol-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("font/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "Poppins-light";
+    src: url("font/Poppins/Poppins-Light.ttf");
+}
+/* Fin d'import des polices */
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
+    
 }
+
+:root{
+    --gold: #AB864C;
+    --white: #ffffff;
+    --black: #000000;
+
+}
+
+body{
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+.header{
+    text-align: center;
+    
+}
+/* image du header */
+.header__image{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 40%;
+    
+}
+/* fin de l'image du header */
+/* début du menu de navigation */
+.nav__list{
+    list-style: none;
+}
+.nav__link{
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-weight: 700;
+    
+}
+.nav__link:hover{
+    color: var(--gold);
+}
+.nav__link.active{
+    color: var(--gold);
+
+}
+/* Fin du menu */
+/* début du header titre du main */
+main{
+    margin-top: 10px;
+}
+.main{
+    background-image: url("images/haute-couture-2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+.main__subtitle{
+    display: flex;
+    margin: 80px 40px 90px  40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+    opacity: 0.8;
+    line-height: 1.3;
+
+}
+/* Fin du titre */
+/* début Maupassant */
+.maupassant__citation{
+    text-align: center;
+    margin: 50px 5px 5px 5px;
+    line-height: 1;
+    font-weight: bold;
+}
+.maupassant__autor{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+/* Fin de la citation de maupassant */
+/* début citation délicieuse */
+.maupassant__description__gateaux{
+    text-align: center;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    padding: 10px;
+    font-family: "Poppins-Light";
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+/* Fin de citation délicieuse */
+.nospatisserie{
+    background-color: var(--gold);
+    text-align: center;
+    color: var(--white);
+    
+    padding-bottom: 40px;
+}
+.nospatisserie__subtitle{
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+.nospatisserie__images{
+    width: 70%;
+}
+
+.nospatisserie__threetitle{
+    margin: 50px;
+}
+.nospatisserie__description{
+    margin: 10px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.nospatisserie__button{
+    padding: 10px;
+    background-color: var(--gold);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+/* Fin de section de patisserie */
+/* début section histoire */
+
+.storie::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 5px;
+    width: 80%;
+    margin-top: 20%;
+}
+.storie__douille{
+    margin: 80px auto 30px;
+    display: block;
+    height: 200px;
+    width: auto;
+}
+.storie__guillemet{
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    padding-bottom: 10px;
+}
+.storie__subtitle{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px;
+    line-height: 1;
+    font-size: 1.6rem;
+}
+.storie__description{
+    margin: 30px;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: start;
+}
+.storie__button{
+    margin-left: 30px;
+    padding: 10px;
+    background-color: var(--gold);
+    color: var(--white);
+    border: none;
+}
+/* Fin de la section storie */
+/* début de la section form */
+.even__subtitle{
+    margin: 20px 10px 40px 10px;
+    text-align: center;
+    line-height: 1;
+}
+.even__description{
+    line-height: 1;
+    margin: 0 10px 30px 30px;
+}
+/* début du vrai formulaire */
+.form__field{
+    margin-left: 30px;
+}
+.indentiteinput{
+    display: flex;
+    gap: 10px;
+}
+.champ{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 140px;
+}
+.champs__input{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.indentitelabel{
+    font-family: "Poppins-light";
+    font-size: 0.8rem;
+}
+.email__label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+.email__input{
+    width: 290px;
+    
+}
+.placeholder{
+    margin-top: 20px;
+}
+.textearea__message{
+    resize: none;
+}
+.checkbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.label__checkbox{
+    line-height: 1;
+}
+.envoyer{
+    width: 290px;
+    padding: 10px;
+    background-color: var(--gold);
+    color: var(--white);
+    border: none;
+    margin-bottom: 50px;
+
+}
+
+/* fin du formulaire */
+/*début haut du footer */
+.footer__header{
+    background-color: var(--gold);
+    height: 200px;
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+}
+.footer__header__subtitle{
+    line-height: 1;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.footer__header__adresse{
+    width: 200px;
+    margin: 0 auto;
+    line-height: 1;
+}
+/* fin de l'adresse */
+.footer__main{
+    margin: 0;
+    
+}
+.footer__main__info{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: left;
+}
+.footer__main__info img{
+    margin-top: 80px;
+    margin-bottom: 5px;
+    width: 70%;
+    
+    padding-left: 120px;
+}
+.footer__nav{
+    
+    margin-bottom: 50px;
+}
+.footer__nav__list{
+    list-style: none;
+    
+    padding-left: 120px;
+}
+
+.footer__nav__link{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-weight: 700;
+    
+    
+}
+.footer__nav__link:hover{
+    color: var(--gold);
+}
+.footer__nav__link.active{
+    color: var(--gold);
+
+}
+.footer__main__info__phone{
+    padding-left: 120px;
+}
+.footer__main__info__adresse{
+    padding-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+
+}
+.centerfooter{
+    
+    padding-left: 100px;
+}
+
+
+
